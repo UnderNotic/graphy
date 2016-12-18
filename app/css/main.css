@@ -1,0 +1,78 @@
+﻿html, body {
+    background: darkslategray;
+    position: relative;
+    margin: 0;
+    z-index: -100;    
+}
+
+html, body, button {
+    color: whitesmoke;    
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 58px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 25px;
+    z-index: -10;
+}
+
+canvas {
+    display: block;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  color: #cfc;
+}
+
+#left-btn{
+    margin-left: 5%;
+}
+
+
+#ctr-btn{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px; 
+}
+
+#right-btn{
+    float: right;
+    margin-right: 5%;
+}
+
+#controls
+{
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

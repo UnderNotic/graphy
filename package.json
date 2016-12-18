@@ -1,0 +1,31 @@
+{
+  "name": "graphy",
+  "version": "0.0.1",
+  "description": "Canvas graph visualisation",
+  "main": "./app/js/app.js",
+  "scripts": {
+    "start": "npm run serve",
+    "test": "mocha app.test/**/*.test.js --require babel-register",
+    "test-debug": "node-debug ./node_modules/mocha/bin/_mocha app.test --require babel-core/register",
+    "clean": "rimraf ../ShorterPathAlg.API/public/*",
+    "build": "webpack -d --display-modules --progress & node ./build_scripts/copy_statics.js",
+    "serve": "npm run build && node ./build_scripts/open_browser.js & webpack-dev-server --content-base ../ShorterPathAlg.API/public --inline"
+  },
+  "author": "Piotr Szymura",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^0.26.3",
+    "rimraf": "^2.5.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "mocha": "^3.1.2",
+    "babel-core": "6.17.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-loader": "^6.2.7"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
